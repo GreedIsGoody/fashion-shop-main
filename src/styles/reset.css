@@ -62,16 +62,17 @@ input::-ms-clear {
 	display: none;
 }
 
-textarea {
-	resize: vertical;
-}
-
 button, input[type="submit"] {
     display: inline-block;
     box-shadow: none;
     background-color: transparent;
     background: none;
     cursor: pointer;
+}
+
+input:focus, input:active,
+button:focus, button:active {
+    outline: none;
 }
 
 button::-moz-focus-inner {
@@ -85,8 +86,4 @@ label {
 
 legend {
 	display: block;
-}
-
-input[type='file'] {
-	max-width: 100%;
 }
